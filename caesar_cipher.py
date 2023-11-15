@@ -1,5 +1,8 @@
 a = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
+
+
+
 def e(t, o):
   r = ""
   for c in t:
@@ -8,6 +11,9 @@ def e(t, o):
     else:
       r += (a[(a.find(c) + o) % len(a)])
   return r
+
+
+
 
 def d(t, o):
   r = ""
@@ -18,12 +24,18 @@ def d(t, o):
       r += (a[(a.find(c) - o) % len(a)])
   return r
 
+
+
+
 w = """
 1. Encrypt text
 2. Decrypt text
 3. Bruteforce all rotations
 Choose mode: """
 mode = int(input(w))
+
+
+
 
 if mode == 1:
   text = input("Enter the text: ")
